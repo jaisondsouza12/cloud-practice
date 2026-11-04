@@ -1,0 +1,38 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: aquamarine;
+}
+
+button {
+    color: red;
+}
+
+.form-style {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin: 10px;
+}
+
