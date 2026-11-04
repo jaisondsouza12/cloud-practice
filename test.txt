@@ -1,0 +1,11 @@
+winget install --id Git.Git -e --source winget
+
+git config --global user.name "Jaison D'Souza"
+git config --global user.email "your-github-email@example.com"
+
+git init
+git add .
+git commit -m "Add ShopEasy static e-commerce site"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/shopeasy-store.git
+git push -u origin main
