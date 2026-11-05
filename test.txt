@@ -9,3 +9,53 @@ git commit -m "Add ShopEasy static e-commerce site"
 git branch -M main
 git remote add origin https://github.com/YOUR-USERNAME/shopeasy-store.git
 git push -u origin main
+----------------------
+Get-Location
+New-Item test.txt -ItemType File
+"Hello" | Out-File test.txt
+Get-Content test.txt
+Copy-Item test.txt copy.txt
+Rename-Item copy.txt new.txt
+Move-Item new.txt C:\Temp
+Remove-Item test.txt
+Get-ChildItem
+---
+Get-Process
+Get-Process | Where-Object {$_.CPU -gt 100}
+Start-Process notepad
+Stop-Process -Name notepad
+---
+function doPost(e) {
+  var sheet=SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
+  sheet.appendRow(
+    [
+      new Date(),
+      e.parameter.name,
+      e.parameter.email,
+      e.parameter.course,
+      e.parameter.phone,
+      e.parameter.message
+    ]
+  );
+  return ContentService.createTextOutput("Form Submitted Successfully!!!");
+}
+---------------------------------------------------------------------------
+.form-style {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+input[type="text"],
+input[type="number"] {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+input[type="radio"] {
+    margin: 10px;
+}
